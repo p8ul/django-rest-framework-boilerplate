@@ -1,5 +1,13 @@
+certifi==2018.8.24
+chardet==3.0.4
+coverage==4.5.1
+coveralls==1.5.1
 Django==2.1.2
 django-filter==2.0.0
 djangorestframework==3.8.2
+docopt==0.6.2
+idna==2.7
 Markdown==3.0.1
 pytz==2018.5
+requests==2.19.1
+urllib3==1.23

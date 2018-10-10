@@ -5,6 +5,9 @@ Simple boilerplate for django & django rest framework
 [![Coverage Status](https://coveralls.io/repos/github/p8ul/django-rest-framework-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/p8ul/django-rest-framework-boilerplate?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/e066442f75f4bc3f5269/maintainability)](https://codeclimate.com/github/p8ul/django-rest-framework-boilerplate/maintainability)
 
+### Tasks list
+- [x] Users api CRUD endpoints
+- [ ] DRF JWT Authentication
 #### User Endpoints
 
 Method | Endpoint | Functionality
@@ -14,9 +17,6 @@ GET | `/api/user/create` | Creates a user
 GET | `/api/user/profile/{pk}` | Retrieve a user
 PUT | `/api/user/update/{pk}` | Edit a user
 DELETE | `/api/user/destroy/{pk}` | Delete a user
-
-### Tasks list
-- [x] Users api CRUD endpoints
 
 
 ### Installation

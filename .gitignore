@@ -65,7 +65,7 @@ update-env.py
 !/app_dir/*/migrations/__init__.py
 
 !.gitignore
-!.travis*
+!.travis.yml
 .*
 
 

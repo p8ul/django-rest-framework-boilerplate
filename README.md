@@ -15,8 +15,8 @@ GET | `/api/user/profile/{pk}` | Retrieve a user
 PUT | `/api/user/update/{pk}` | Edit a user
 DELETE | `/api/user/destroy/{pk}` | Delete a user
 
-### Tasks
-[x] Users api CRUD endpoints
+### Tasks list
+- [x] Users api CRUD endpoints
 
 
 ### Installation

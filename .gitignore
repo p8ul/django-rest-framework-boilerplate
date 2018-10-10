@@ -66,7 +66,7 @@ update-env.py
 
 !.gitignore
 !.travis.yml
-.*
+
 
 
 

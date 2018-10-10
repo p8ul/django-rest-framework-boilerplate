@@ -15,6 +15,9 @@ GET | `/api/user/profile/{pk}` | Retrieve a user
 PUT | `/api/user/update/{pk}` | Edit a user
 DELETE | `/api/user/destroy/{pk}` | Delete a user
 
+### Tasks
+[x] Users api CRUD endpoints
+
 
 ### Installation
 If you wish to run your own build, first ensure you have python globally installed in your computer. If not, you can get python (here)[python.org].

@@ -1,0 +1,68 @@
+# Compiled Python modules
+*.pyo
+*.pyc
+
+# SQLite
+*.db
+*.s3db
+*.sqlite3
+
+# Emacs save files
+*~
+\#*
+.\#*
+
+# Vim n co
+*.swp
+
+# cached files
+configuration/__pycache__/
+app_dir/__pycache__/
+app_dir/api/__pycache__/
+loglib/__pycache__/
+/app_dir/static/dist/*
+utilities/__pycache__/
+*/__pycache__/*
+
+
+log
+coverage/
+.idea/
+.idea/workspace.xml
+.DS_Store
+
+# Static files in Vagrant environment
+/static
+/django_extensions
+/debug_toolbar
+
+# ignore virtualenv
+.venv
+.elasticbeanstalk/config.yml
+log/*
+
+*.pyc
+__pycache__/
+*.cpython-36.pyc
+.sass-cache/*
+.sass-cache
+
+
+.env
+update-env.py
+/venv
+
+
+*.log
+*.retry
+#Coverage
+.coverage
+
+#vscode ide
+.vscode
+
+/app_dir/*/migrations/*
+!/app_dir/*/migrations/__init__.py
+
+
+

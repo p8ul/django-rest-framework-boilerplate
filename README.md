@@ -11,7 +11,7 @@ Simple boilerplate for django & django rest framework
 - [ ] Document folder structure
 - [ ] Configure Static/media & templates
 - [ ] Add docker configurations
-- [ ] Integrate react on templates
+- [ ] Integrate material ui & react js on templates
 
 #### User Endpoints
 

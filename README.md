@@ -8,6 +8,11 @@ Simple boilerplate for django & django rest framework
 ### Tasks list
 - [x] Users api CRUD endpoints
 - [ ] DRF JWT Authentication
+- [ ] Document folder structure
+- [ ] Configure Static/media & templates
+- [ ] Add docker configurations
+- [ ] Integrate react on templates
+
 #### User Endpoints
 
 Method | Endpoint | Functionality

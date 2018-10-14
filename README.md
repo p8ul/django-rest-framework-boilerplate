@@ -7,11 +7,16 @@ Simple boilerplate for django & django rest framework
 
 ### Tasks list
 - [x] Users api CRUD endpoints
-- [ ] DRF JWT Authentication
+- [x] DRF JWT Authentication
+- [ ] Add docker configurations
 - [ ] Document folder structure
 - [ ] Configure Static/media & templates
-- [ ] Add docker configurations
 - [ ] Integrate material ui & react js on templates
+ 
+#### Jwt token endpoint
+Method | Endpoint | Functionanlity
+--- | --- | ---
+POST | `/api-token-auth` | Request jwt token
 
 #### User Endpoints
 

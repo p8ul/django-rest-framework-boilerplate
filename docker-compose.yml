@@ -1,15 +1,18 @@
 version: '3'
 services:
+  db:
+    image: postgres
   web:
     build: .
-    ports:
-    - "5000:5000"
     volumes:
-    - .:/code
-    - logvolume01:/var/log
+    - .:/app
     links:
     - redis
     command: python manage.py runserver 0.0.0.0:5000
+    ports:
+    - "5000:5000"
+    depends_on:
+      - db
   redis:
     image: redis
 volumes:

@@ -47,6 +47,12 @@ class ViewTestCase(TestCase):
         )
         self.assertEqual(api_update.data.get('username'), 'James')
 
-    def test_api_list(self):
+    def test_api_list_with_parameters(self):
         self.api_list = self.client.get(reverse(module + ':user-list') + '?q=oli&page_size=10')
         self.assertEqual(self.api_list.status_code, status.HTTP_200_OK)
+
+    def test_api_list_without_parameters(self):
+        self.api_list = self.client.get(reverse(module + ':user-list'))
+        self.assertEqual(self.api_list.status_code, status.HTTP_200_OK)
+
+

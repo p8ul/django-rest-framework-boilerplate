@@ -30,11 +30,11 @@ class ViewTestCase(TestCase):
             reverse(module + ':user-creator'),
             self.instance_data, format='json'
         )
-        self.api_list = self.client.get(reverse(module+':user-list'))
+        # self.api_list = self.client.get(reverse(module+':user-list'))
 
     def test_api_can_create_an_instance(self):
         """Test the api has instance creation capability."""
-        # self.assertEqual(self.response.status_code, status.HTTP_201_CREATED)
+        self.assertEqual(self.response.status_code, status.HTTP_201_CREATED)
         self.assertEqual(self.response.data.get('username'), self.instance_data.get('username'))
 
         instance = User.objects.last()
@@ -48,4 +48,5 @@ class ViewTestCase(TestCase):
         self.assertEqual(api_update.data.get('username'), 'James')
 
     def test_api_list(self):
+        self.api_list = self.client.get(reverse(module + ':user-list') + '?q=oli&page_size=10')
         self.assertEqual(self.api_list.status_code, status.HTTP_200_OK)

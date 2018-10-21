@@ -27,8 +27,12 @@ class UserTest(TestCase):
         response = self.client.post(self.create_url, self.body, format='json')
         self.assertEqual(201, response.status_code)
 
-    def test_listing_user_api(self):
+    def test_listing_user_api_without_parameters(self):
         response = self.client.get(self.list_url)
+        self.assertContains(response, self.user)
+
+    def test_listing_user_api_with_parameters(self):
+        response = self.client.get(self.list_url + '?page_size=10&q=' + self.user.username)
         self.assertContains(response, self.user)
 
     def test_update_user_api(self):

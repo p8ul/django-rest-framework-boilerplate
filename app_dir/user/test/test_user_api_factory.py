@@ -12,7 +12,7 @@ class UserTest(TestCase):
         self.namespace = 'user_api'
         self.create_url = reverse(self.namespace + ':user-creator')
         self.list_url = reverse(self.namespace + ':user-list')
-        self.update_url = reverse(self.namespace + ':user-updater')
+        # self.update_url = reverse(self.namespace + ':user-updater')
 
     def test_list_factory(self):
         response = self.client.post(self.create_url, {}, format='json')

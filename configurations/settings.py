@@ -45,6 +45,7 @@ EXTERNAL_APPS = (
 
 LOCAL_APPS = (
     'app_dir.user',
+    'app_dir.module',
 )
 
 INSTALLED_APPS = DEFAULT_APPS + EXTERNAL_APPS + LOCAL_APPS

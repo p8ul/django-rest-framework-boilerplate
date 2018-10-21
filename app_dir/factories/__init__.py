@@ -1,1 +1,2 @@
-from app_dir.factories.user import *
+from .user import *
+from .module import *

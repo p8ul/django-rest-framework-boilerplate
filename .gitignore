@@ -67,6 +67,9 @@ update-env.py
 !.gitignore
 !.travis.yml
 
+*/migrations/*
+!*/migrations/__init__.py
+
 
 
 

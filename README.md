@@ -31,7 +31,7 @@ DELETE | `/api/user/destroy/{pk}` | Delete a user
 
 ### Installation 
 If you wish to run your own build, you two options
- 1. User Docker compose.
+ 1. Use Docker compose.
     
     `$ git clone https://github.com/p8ul/django-rest-framework-boilerplate`
     

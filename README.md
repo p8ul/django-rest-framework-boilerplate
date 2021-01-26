@@ -22,8 +22,8 @@ POST | `/api-token-auth` | Request jwt token
 
 Method | Endpoint | Functionality
 --- | --- | ---
-POST | `/api/user` | List users
-GET | `/api/user/create` | Creates a user
+GET | `/api/user` | List users
+POST | `/api/user/create` | Creates a user
 GET | `/api/user/profile/{pk}` | Retrieve a user
 PUT | `/api/user/update/{pk}` | Edit a user
 DELETE | `/api/user/destroy/{pk}` | Delete a user
